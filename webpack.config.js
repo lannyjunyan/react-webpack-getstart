@@ -12,7 +12,8 @@ module.exports = {
                 exclude: /node_modules/,// 屏蔽不需要处理的文件(文件夹)(可选)
                 loader: 'babel',        // loader的名称(必须)
                 query: {
-                    presets: ['es2015', 'react', 'stage-3'] // stage-3 for '...' operator
+                    presets: ['es2015', 'react', 'stage-3'], // stage-3 for '...' operator
+                    plugins: ["transform-runtime", "babel-plugin-transform-regenerator", "babel-plugin-transform-es2015-modules-commonjs"], // for async/await
                 }
             }
         ]
