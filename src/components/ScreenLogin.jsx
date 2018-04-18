@@ -11,13 +11,15 @@ class ScreenLogin extends React.Component {
     }
 
     handleUserNameChange(event) {
+        //console.log('username:', event.target.value);
         //this.setState({userName: event.target.value});
-        console.log('username:', event.target.value);
+        this.props.handleUserNameChange(event.target.value);
     }
 
     handlePasswordChange(event) {
+        //console.log('password:', event.target.value);
         //this.setState({password: event.target.value});
-        console.log('password:', event.target.value);
+        this.props.handlePasswordChange(event.target.value);
     }
 
     handleSubmit(event) {
@@ -28,11 +30,11 @@ class ScreenLogin extends React.Component {
         return (
             <div style={ss.box}>
                     <label>
-                        Name: <input type="text" style={ss.form} onChange={this.handleUserNameChange} value={this.props.userName} />
+                        Name: <input type="text" style={ss.form} onChange={this.handleUserNameChange.bind(this)} value={this.props.userName} />
                     </label>
 
                     <label>
-                        Password: <input type="text" style={ss.form} onChange={this.handlePasswordChange} value={this.props.password}/>
+                        Password: <input type="text" style={ss.form} onChange={this.handlePasswordChange.bind(this)} value={this.props.password}/>
                     </label>
 
                     <input type="submit" value="Submit" onClick={this.handleSubmit.bind(this)}/>

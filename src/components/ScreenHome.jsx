@@ -10,24 +10,11 @@ class ScreenHome extends React.Component {
     componentDidMount() {
     }
 
-    handleUserNameChange(event) {
-        //this.setState({userName: event.target.value});
-        console.log('username:', event.target.value);
-    }
-
-    handlePasswordChange(event) {
-        //this.setState({password: event.target.value});
-        console.log('password:', event.target.value);
-    }
-
-    handleSubmit(event) {
-        //this.props.history.push(`/home`);
-    }
-
     render() {
         return (
             <div style={ss.box}>
-                This is home screen.
+                <p>This is home screen.</p>
+                <p>{this.props.userName} has logged in.</p>
             </div>
         )
     }
@@ -36,13 +23,10 @@ class ScreenHome extends React.Component {
 const ss = {
     box: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         height: '100%',
-    },
-    form: {
-        width: 150,
     },
 }
 
