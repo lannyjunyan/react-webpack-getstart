@@ -1,10 +1,16 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import Component1 from './components/Component.jsx';
+import { render } from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import ScreenLogin from './components/ScreenLogin.jsx';
+import ScreenHome from './components/ScreenHome.jsx';
 
-ReactDom.render(
-    <div style={{ backgroundColor: '#488', width: '100%', height: '100%' }}>
-        <Component1 />
-    </div>,
-    document.getElementById('content')
+render(
+    <BrowserRouter>
+        <div style={{width: '100%', height: '100%', backgroundColor: '#bbb'}} >
+            <Route exact path="/" component={ ScreenLogin }/>
+            <Route path="/home" component={ ScreenHome }/>
+        </div>
+    </BrowserRouter>
+    , document.getElementById('content')
 );
+
