@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import ScreenLogin from '../components/ScreenLogin.jsx'
+import { userNameChange, passwordChange } from '../actions/rootActions'
 console.log('ScreenLogin:', ScreenLogin);
 
 function mapStateToProps (state, ownProps) {
@@ -10,17 +11,11 @@ function mapDispatchToProps(dispatch, myProps) {
     return {
         handleUserNameChange: (userName) => {
             //console.log('map dispatch. userName:', userName);
-            dispatch({
-                type: 'USERNAME_CHANGE',
-                userName,
-            });
+            dispatch(userNameChange(userName));
         },
         handlePasswordChange: (password) => {
             //console.log('map dispatch. password:', password);
-            dispatch({
-                type: 'PASSWORD_CHANGE',
-                password,
-            });
+            dispatch(passwordChange(password));
         },
     }
 }
