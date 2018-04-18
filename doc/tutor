@@ -1,0 +1,28 @@
+React + Redux + Router
+
+
+React?
+React: UI -- easy.
+React技术栈: React + Redux + Router + ...
+
+
+React:
+webpack
+jsx + 组件化(component)
+props + state
+"create-react-app" vs "this start kit"
+
+
+@block_gram.png
+
+
+资料:
+react中文: https://chenyitian.gitbooks.io/react-docs/content/
+router中文: http://react-guide.github.io/react-router-cn/docs/API.html
+redux中文: http://cn.redux.js.org/docs/advanced/UsageWithReactRouter.html
+redux视频: https://chenyitian.gitbooks.io/react-docs/content/
+该视频据说是redux作者亲自录制, 强烈推荐.
+
+
+thanks! 😊
+questions?
