@@ -20,6 +20,7 @@ props + state
 react中文: https://chenyitian.gitbooks.io/react-docs/content/
 router中文: http://react-guide.github.io/react-router-cn/docs/API.html
 redux中文: http://cn.redux.js.org/docs/advanced/UsageWithReactRouter.html
+ui库: https://ant.design/docs/react/introduce
 redux视频: https://chenyitian.gitbooks.io/react-docs/content/
 该视频据说是redux作者亲自录制, 强烈推荐.
 
