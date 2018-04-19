@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import ScreenHome from '../components/ScreenHome.jsx'
 
 function mapStateToProps (state, ownProps) {
-    return { userName: state.userInfo.userName, password: state.userInfo.devices };
+    return { userName: state.userInfo.userName, password: state.userInfo.password };
 }
 
 function mapDispatchToProps(dispatch, myProps) {
