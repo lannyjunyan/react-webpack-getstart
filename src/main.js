@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 
@@ -18,12 +18,12 @@ const store = createStore(
 
 render(
     <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
             <div style={{width: '100%', height: '100%', backgroundColor: '#bbb'}} >
                 <Route exact path="/" component={ ScreenLoginCtn }/>
                 <Route path="/home" component={ ScreenHomeCtn }/>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     </Provider>
     , document.getElementById('content')
 );
