@@ -13,7 +13,6 @@ console.log('ScreenLoginCtn:', ScreenLoginCtn);
 
 const store = createStore(
     rootReducer,
-    //applyMiddleware(middleware),
     compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : (x)=>(x))
 );
 
