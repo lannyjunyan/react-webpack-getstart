@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, HashRouter, Route } from 'react-router-dom';
-import { createStore, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux'
 
 import ScreenLoginCtn from './containers/ScreenLoginCtn.js';
@@ -13,6 +14,7 @@ console.log('ScreenLoginCtn:', ScreenLoginCtn);
 const store = createStore(
     rootReducer,
     //applyMiddleware(middleware),
+    compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : ()=>{})
 );
 
 
