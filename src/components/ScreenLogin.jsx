@@ -23,7 +23,13 @@ class ScreenLogin extends React.Component {
     }
 
     handleSubmit(event) {
-        this.props.history.push(`/home`);
+        //this.props.history.push(`/home`);
+        this.props.history.push({
+            pathname:'/home',
+            state: {
+                fromScreen: 'ScreenLogin',
+            },
+        });
     }
 
     render() {
