@@ -1,7 +1,10 @@
+import deepFreeze from 'deep-freeze';
+
 const initialState = {userName: '', password: ''};
 //console.log('### initialState:', initialState);
 
 const userInfo = (state = initialState, action) => {
+    deepFreeze(state);
     switch(action.type) {
         case 'USERNAME_CHANGE':
             console.log('[rd] userName:', action.userName);
