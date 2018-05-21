@@ -1,17 +1,17 @@
 import { connect } from 'react-redux'
 import ScreenLogin from '../components/ScreenLogin.jsx'
-import { userNameChange, passwordChange } from '../actions/rootActions'
+import { usernameChange, passwordChange } from '../actions/rootActions'
 console.log('ScreenLogin:', ScreenLogin);
 
 function mapStateToProps (state, ownProps) {
-    return { userName: state.userInfo.userName, password: state.userInfo.password };
+    return { username: state.userInfo.username, password: state.userInfo.password };
 }
 
 function mapDispatchToProps(dispatch, myProps) {
     return {
-        handleUserNameChange: (userName) => {
-            //console.log('map dispatch. userName:', userName);
-            dispatch(userNameChange(userName));
+        handleUsernameChange: (username) => {
+            //console.log('map dispatch. username:', username);
+            dispatch(usernameChange(username));
         },
         handlePasswordChange: (password) => {
             //console.log('map dispatch. password:', password);

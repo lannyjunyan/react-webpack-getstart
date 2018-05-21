@@ -15,7 +15,7 @@ class ScreenHome extends React.Component {
             <div style={ss.box}>
                 <p>This is home screen.</p>
                 <p>From Screen: {this.props.location.state.fromScreen}</p>
-                <p>{this.props.userName} has logged in.</p>
+                <p>{this.props.username} has logged in.</p>
             </div>
         )
     }

@@ -1,6 +1,6 @@
-export const userNameChange = (userName) => ({
+export const usernameChange = (username) => ({
     type: 'USERNAME_CHANGE',
-    userName,
+    username,
 });
 
 export const passwordChange = (password) => ({

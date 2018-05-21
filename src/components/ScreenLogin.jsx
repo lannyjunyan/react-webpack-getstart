@@ -10,10 +10,10 @@ class ScreenLogin extends React.Component {
     componentDidMount() {
     }
 
-    handleUserNameChange(event) {
+    handleUsernameChange(event) {
         //console.log('username:', event.target.value);
-        //this.setState({userName: event.target.value});
-        this.props.handleUserNameChange(event.target.value);
+        //this.setState({username: event.target.value});
+        this.props.handleUsernameChange(event.target.value);
     }
 
     handlePasswordChange(event) {
@@ -36,7 +36,7 @@ class ScreenLogin extends React.Component {
         return (
             <div style={ss.box}>
                     <label>
-                        Name: <input type="text" style={ss.form} onChange={this.handleUserNameChange.bind(this)} value={this.props.userName} />
+                        Name: <input type="text" style={ss.form} onChange={this.handleUsernameChange.bind(this)} value={this.props.username} />
                     </label>
 
                     <label>
