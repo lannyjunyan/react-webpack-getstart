@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
 import userInfo from './userInfo.js';
-import immutable from './immutable.js';
+import immutab from './immutab.js';
 
 const rootReducer = combineReducers({
     userInfo,
-    //immutable,
+    //immutab,
 })
 
 export default rootReducer;

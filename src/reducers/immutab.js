@@ -7,7 +7,7 @@ const initialState = {
 };
 //console.log('### initialState:', initialState);
 
-const immutable = (state = initialState, action) => {
+const immutab = (state = initialState, action) => {
     deepFreeze(state);
     switch(action.type) {
         case 'USERNAME_CHANGE':
@@ -25,6 +25,6 @@ const immutable = (state = initialState, action) => {
     }
 };
 
-export default immutable;
+export default immutab;
 
 // https://github.com/debitoor/dot-prop-immutable
