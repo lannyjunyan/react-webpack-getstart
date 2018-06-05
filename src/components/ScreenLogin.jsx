@@ -36,7 +36,7 @@ class ScreenLogin extends React.Component {
         return (
             <div style={ss.box}>
                     <label>
-                        Name: <input type="text" style={ss.form} onChange={this.handleUsernameChange.bind(this)} value={this.props.username} />
+                        Namessss: <input type="text" style={ss.form} onChange={this.handleUsernameChange.bind(this)} value={this.props.username} />
                     </label>
 
                     <label>
